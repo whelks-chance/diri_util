@@ -16,7 +16,7 @@ class ImgExif:
         self.lnglats = []
         self.all_points = []
         self.all_dates = []
-        self.c_scale = colours.mqc_colour_scale(name='RdYlGn', minval=0, maxval=200)
+        self.c_scale = colours.mqc_colour_scale(name='RdYlGn-rev', minval=0, maxval=200)
 
     def exif_latlng_to_wgs84(self, lat, lng, lat_dir, lng_dir):
         lat_arr = str(lat).replace('[', '').replace(']', '').split(',')
