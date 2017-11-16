@@ -6,6 +6,7 @@ import exifread
 import dateutil.parser
 import geojson
 from PIL import Image
+from colours import colours
 
 
 class ImgExif:
@@ -15,6 +16,7 @@ class ImgExif:
         self.lnglats = []
         self.all_points = []
         self.all_dates = []
+        self.c_scale = colours.mqc_colour_scale(minval=0, maxval=255)
 
     def exif_latlng_to_wgs84(self, lat, lng, lat_dir, lng_dir):
         lat_arr = str(lat).replace('[', '').replace(']', '').split(',')
@@ -28,7 +30,7 @@ class ImgExif:
                     )
                 )
             lat_arr_final.append(lat_part.strip())
-        dd = float(lat_arr_final[0]) + float(lat_arr_final[1]) / 60 + float(lat_arr_final[2]) / (60 * 60);
+        dd = float(lat_arr_final[0]) + float(lat_arr_final[1]) / 60 + float(lat_arr_final[2]) / (60 * 60)
 
         print('lat', dd, 'is S == *{}*'.format(lat_dir), lat_dir == "S")
         if str(lat_dir) == 'S':
@@ -83,7 +85,7 @@ class ImgExif:
         test_date = dateutil.parser.parse(time_str)
         return time_str, test_date
 
-    def read_exif(self, folder):
+    def read_exif(self, folder, show_img=True):
         print('Running')
 
         for f in os.listdir(folder):
@@ -142,11 +144,13 @@ class ImgExif:
                         )
                         print(lat, lng)
 
-                        img = Image.open(full_filepath)
-                        img.show()
+                        value = ''
+                        if show_img:
+                            img = Image.open(full_filepath)
+                            img.show()
 
-                        value = input("Input the value >> ")
-                        print(value)
+                            value = input("Input the value >> ")
+                            print(value)
 
                         self.cache({
                             'img_name': f,
@@ -161,7 +165,9 @@ class ImgExif:
                     lat, lng, {
                         'datetime': time_str,
                         'img_name': f,
-                        'value': value
+                        'value': value,
+                        'marker-symbol': 'heart-15',
+                        'marker-color': self.c_scale.get_colour(value)
                     })
 
             print('x'*20, '\n\n')
