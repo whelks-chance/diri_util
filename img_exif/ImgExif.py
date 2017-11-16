@@ -166,7 +166,7 @@ class ImgExif:
                         'datetime': time_str,
                         'img_name': f,
                         'value': value,
-                        'marker-symbol': 'heart-15',
+                        'marker-symbol': 'heart',
                         'marker-color': self.c_scale.get_colour(value)
                     })
 
