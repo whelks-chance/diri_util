@@ -1,4 +1,7 @@
 ExifRead==2.1.2
+geojson==2.3.0
+olefile==0.44
+pillow==4.3.0
 python-dateutil==2.6.1
 six==1.11.0
 wheel==0.24.0

@@ -1,9 +1,20 @@
+import json
 import os
+import pprint
+
 import exifread
 import dateutil.parser
+import geojson
+from PIL import Image
 
 
 class ImgExif:
+
+    def __init__(self):
+        self.all_cache = {}
+        self.lnglats = []
+        self.all_points = []
+        self.all_dates = []
 
     def exif_latlng_to_wgs84(self, lat, lng, lat_dir, lng_dir):
         lat_arr = str(lat).replace('[', '').replace(']', '').split(',')
@@ -96,6 +107,7 @@ class ImgExif:
                         gps_keys.append(key)
                         print(key, tags[key])
 
+                time_str = ''
                 if 'GPS GPSDate' in tags.keys():
                     # 2008-08-09T18:39:22Z
                     # Lets build a datetime string!
@@ -105,6 +117,7 @@ class ImgExif:
                     )
                     print('\n', 'datetime.datetime object:', time_obj)
                     print(time_str)
+                    self.all_dates.append(time_str)
 
                 if 'GPS GPSLongitude' in tags.keys():
                     lat, lng = self.exif_latlng_to_wgs84(
@@ -115,18 +128,65 @@ class ImgExif:
                     )
                     print(lat, lng)
 
-                print(len(gps_keys))
+                    img = Image.open(full_filepath)
+                    img.show()
+
+                    value = input("Input the value >> ")
+                    print(value)
+
+                    self.create_geojson(lat, lng, {
+                                            'datetime': time_str,
+                                            'img_name': f,
+                                            'value': value
+                                        })
+                    self.cache({
+                        'img_name': f,
+                        'value': value,
+                        'datetime': time_str,
+                        'lat': lat,
+                        'lng': lng
+                    })
                 print('x'*20, '\n\n')
+
+    def create_geojson(self, lat, lng, props=None):
+        if props is None:
+            props = {}
+        self.all_points.append(
+            geojson.Feature(
+                geometry=geojson.Point((lng, lat)),
+                properties=props
+            )
+        )
+        self.lnglats.append((lng, lat))
+
+    def print_geojson(self):
+        ls = geojson.LineString(self.lnglats)
+        self.all_points.append(geojson.Feature(geometry=ls))
+        fc = geojson.FeatureCollection(self.all_points)
+        print(geojson.dumps(fc))
+
+        with open('jakarta_geo.json', 'w') as geo1:
+            geo1.write(geojson.dumps(fc))
+
+    def print_dates(self):
+        print(self.all_dates)
+        print(sorted(self.all_dates))
+
+    def cache(self, params):
+        self.all_cache[params['img_name']] = params
+        with open('cache.json', 'w') as c1:
+            c1.write(pprint.pformat(self.all_cache))
+
+    def load_cache(self):
+        with open('cache.json', 'r') as c2:
+            self.all_cache = json.load(c2)
+        print(self.all_cache)
+
 
 if __name__ == '__main__':
     img_location = "C:\\Users\\Ian Harvey\\OneDrive - Cardiff University\\Email attachments"
     ie = ImgExif()
+    ie.load_cache()
     ie.read_exif(img_location)
-
-    # ie.exif_latlng_to_wgs84(
-    #     "[6, 11, 3929/100]",
-    #     "[106, 49, 2351/100]",
-    #     "S",
-    #     "E"
-    # )
+    ie.print_geojson()
 
