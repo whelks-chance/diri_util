@@ -16,7 +16,7 @@ class ImgExif:
         self.lnglats = []
         self.all_points = []
         self.all_dates = []
-        self.c_scale = colours.mqc_colour_scale(minval=0, maxval=255)
+        self.c_scale = colours.mqc_colour_scale(name='RdYlGn', minval=0, maxval=200)
 
     def exif_latlng_to_wgs84(self, lat, lng, lat_dir, lng_dir):
         lat_arr = str(lat).replace('[', '').replace(']', '').split(',')
@@ -190,7 +190,7 @@ class ImgExif:
         print(geojson.dumps(fc))
 
         with open('jakarta_geo.json', 'w') as geo1:
-            geo1.write(geojson.dumps(fc))
+            geo1.write(geojson.dumps(fc, indent=4))
 
     def print_dates(self):
         print(self.all_dates)
