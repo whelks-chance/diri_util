@@ -61,10 +61,10 @@ class ImgExif:
             if '/' in gps_timestamp_part:
                 fraction_parts = gps_timestamp_part.split('/')
                 fraction_realised = str(
-                        round(
-                            float(fraction_parts[0]) / float(fraction_parts[1])
-                        )
+                    round(
+                        float(fraction_parts[0]) / float(fraction_parts[1])
                     )
+                )
                 gps_timestamp_arr_final.append(
                     fraction_realised.strip()
                 )
@@ -87,68 +87,86 @@ class ImgExif:
         print('Running')
 
         for f in os.listdir(folder):
-            full_filepath = os.path.join(folder, f)
-            if os.path.isfile(full_filepath):
-                print(f)
+            # Reset everything before either reading img or grabbinng from cache
+            lat = None
+            lng = None
+            time_str = None
+            value = None
 
-                # Open image file for reading (binary mode)
-                a_file = open(full_filepath, 'rb')
+            if f in self.all_cache:
+                props = self.all_cache[f]
+                lat = props['lat']
+                lng = props['lng']
+                time_str = props['datetime']
+                value = props['value']
+            else:
 
-                # Return Exif tags
-                tags = exifread.process_file(a_file)
-                # print(pprint.pformat(tags))
+                full_filepath = os.path.join(folder, f)
+                if os.path.isfile(full_filepath):
+                    print(f)
 
-                gps_keys = []
-                for key in tags.keys():
-                    # if 'JPEGThumbnail' not in key:
-                    #     print(key, tags[key])
+                    # Open image file for reading (binary mode)
+                    a_file = open(full_filepath, 'rb')
 
-                    if 'GPS' in key:
-                        gps_keys.append(key)
-                        print(key, tags[key])
+                    # Return Exif tags
+                    tags = exifread.process_file(a_file)
+                    # print(pprint.pformat(tags))
 
-                time_str = ''
-                if 'GPS GPSDate' in tags.keys():
-                    # 2008-08-09T18:39:22Z
-                    # Lets build a datetime string!
-                    time_str, time_obj = self.exif_date_to_iso8601(
-                        tags['GPS GPSDate'],
-                        tags['GPS GPSTimeStamp']
-                    )
-                    print('\n', 'datetime.datetime object:', time_obj)
-                    print(time_str)
-                    self.all_dates.append(time_str)
+                    gps_keys = []
+                    for key in tags.keys():
+                        # if 'JPEGThumbnail' not in key:
+                        #     print(key, tags[key])
 
-                if 'GPS GPSLongitude' in tags.keys():
-                    lat, lng = self.exif_latlng_to_wgs84(
-                        tags['GPS GPSLatitude'],
-                        tags['GPS GPSLongitude'],
-                        tags['GPS GPSLatitudeRef'],
-                        tags['GPS GPSLongitudeRef'],
-                    )
-                    print(lat, lng)
+                        if 'GPS' in key:
+                            gps_keys.append(key)
+                            print(key, tags[key])
 
-                    img = Image.open(full_filepath)
-                    img.show()
+                    time_str = ''
+                    if 'GPS GPSDate' in tags.keys():
+                        # 2008-08-09T18:39:22Z
+                        # Lets build a datetime string!
+                        time_str, time_obj = self.exif_date_to_iso8601(
+                            tags['GPS GPSDate'],
+                            tags['GPS GPSTimeStamp']
+                        )
+                        print('\n', 'datetime.datetime object:', time_obj)
+                        print(time_str)
+                        self.all_dates.append(time_str)
 
-                    value = input("Input the value >> ")
-                    print(value)
+                    if 'GPS GPSLongitude' in tags.keys():
+                        lat, lng = self.exif_latlng_to_wgs84(
+                            tags['GPS GPSLatitude'],
+                            tags['GPS GPSLongitude'],
+                            tags['GPS GPSLatitudeRef'],
+                            tags['GPS GPSLongitudeRef'],
+                        )
+                        print(lat, lng)
 
-                    self.create_geojson(lat, lng, {
-                                            'datetime': time_str,
-                                            'img_name': f,
-                                            'value': value
-                                        })
-                    self.cache({
-                        'img_name': f,
-                        'value': value,
+                        img = Image.open(full_filepath)
+                        img.show()
+
+                        value = input("Input the value >> ")
+                        print(value)
+
+                        self.cache({
+                            'img_name': f,
+                            'value': value,
+                            'datetime': time_str,
+                            'lat': lat,
+                            'lng': lng
+                        })
+
+            if lat and lng and time_str and value:
+                self.add_to_geojson(
+                    lat, lng, {
                         'datetime': time_str,
-                        'lat': lat,
-                        'lng': lng
+                        'img_name': f,
+                        'value': value
                     })
-                print('x'*20, '\n\n')
 
-    def create_geojson(self, lat, lng, props=None):
+            print('x'*20, '\n\n')
+
+    def add_to_geojson(self, lat, lng, props=None):
         if props is None:
             props = {}
         self.all_points.append(
@@ -175,11 +193,15 @@ class ImgExif:
     def cache(self, params):
         self.all_cache[params['img_name']] = params
         with open('cache.json', 'w') as c1:
-            c1.write(pprint.pformat(self.all_cache))
+            json.dump(self.all_cache, c1, indent=4)
 
     def load_cache(self):
-        with open('cache.json', 'r') as c2:
-            self.all_cache = json.load(c2)
+        if os.path.exists('cache.json'):
+            with open('cache.json', 'r') as c2:
+                try:
+                    self.all_cache = json.load(c2)
+                except:
+                    pass
         print(self.all_cache)
 
 
