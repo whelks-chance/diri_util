@@ -5,8 +5,10 @@ import pprint
 import exifread
 import dateutil.parser
 import geojson
+import math
 from PIL import Image
 from colours import colours
+from exifread.utils import Ratio
 
 
 class ImgExif:
@@ -95,7 +97,7 @@ class ImgExif:
             time_str = None
             value = None
 
-            if f in self.all_cache:
+            if f in self.all_cache and self.all_cache[f]['value'] is not '':
                 props = self.all_cache[f]
                 lat = props['lat']
                 lng = props['lng']
@@ -121,7 +123,7 @@ class ImgExif:
 
                         if 'GPS' in key:
                             gps_keys.append(key)
-                            print(key, tags[key])
+                        print(key, tags[key])
 
                     time_str = ''
                     if 'GPS GPSDate' in tags.keys():
@@ -134,6 +136,27 @@ class ImgExif:
                         print('\n', 'datetime.datetime object:', time_obj)
                         print(time_str)
                         self.all_dates.append(time_str)
+
+                    if 'GPS GPSDestBearing' in tags.keys():
+                        gps_dest_bearing = tags['GPS GPSDestBearing']
+                        print('GPSDestBearing', gps_dest_bearing)
+
+                    if 'EXIF LensSpecification' in tags.keys():
+                        gps_lens_specification = tags['EXIF LensSpecification']
+                        print('LensSpecification', gps_lens_specification)
+
+                    if 'EXIF FocalLength' in tags.keys():
+                        gps_focal_length = tags['EXIF FocalLength']
+                        f = gps_focal_length.values[0].num / gps_focal_length.values[0].den
+                        print('FocalLength', gps_focal_length, f)
+
+                    # FOV = 2*math.atan((math.sqrt(a*a + b*b)/2)/f)
+
+                    # FOV = 2*arctan((SQRT(a*a + b*b)/2)/f)
+                    # Where SQRT = square root
+                    # a = lenght of sensor in mm
+                    # b = width of sensor in mm
+                    # f = focal length in mm
 
                     if 'GPS GPSLongitude' in tags.keys():
                         lat, lng = self.exif_latlng_to_wgs84(
