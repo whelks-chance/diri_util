@@ -145,7 +145,6 @@ class ImgExif:
 
                         x_shift = 0.001 * math.sin(bdeg)
                         y_shift = 0.001 * math.cos(bdeg)
-
                         print('x_shift', x_shift, 'y_shift', y_shift)
 
                     if 'EXIF LensSpecification' in tags.keys():
@@ -157,10 +156,10 @@ class ImgExif:
 
                     if 'EXIF FocalLength' in tags.keys():
                         gps_focal_length = tags['EXIF FocalLength']
-                        f = gps_focal_length.values[0].num / gps_focal_length.values[0].den
-                        print('FocalLength', gps_focal_length, f)
+                        foc = gps_focal_length.values[0].num / gps_focal_length.values[0].den
+                        print('FocalLength', gps_focal_length, foc)
 
-                    FOV = 2*math.atan((math.sqrt(a*a + b*b)/2)/f)
+                    FOV = 2*math.atan((math.sqrt(a*a + b*b)/2)/foc)
 
                     print('FOV', FOV)
 
@@ -206,7 +205,10 @@ class ImgExif:
                             ))
                             self.all_points.append(geojson.Feature(
                                 geometry=geojson.Point((lng, lat)),
-                                properties={'img': f}
+                                properties={
+                                    'img': f,
+                                    'marker-symbol': 'attraction',
+                                }
                             ))
 
             if lat and lng and time_str and value:
