@@ -18,6 +18,7 @@ class ImgExif:
         self.all_cache = {}
         self.lnglats = []
         self.all_points = []
+        self.bearing_features = []
         self.all_dates = []
         self.c_scale = colours.mqc_colour_scale(name='RdYlGn-rev', minval=0, maxval=200)
 
@@ -138,13 +139,14 @@ class ImgExif:
                         print(time_str)
                         self.all_dates.append(time_str)
 
+                    bdeg = None
                     if 'GPS GPSDestBearing' in tags.keys():
                         gps_dest_bearing = tags['GPS GPSDestBearing']
                         bdeg = gps_dest_bearing.values[0].num / gps_dest_bearing.values[0].den
                         print('GPSDestBearing', gps_dest_bearing, bdeg)
 
-                        x_shift = 0.001 * math.sin(bdeg)
-                        y_shift = 0.001 * math.cos(bdeg)
+                        x_shift = 0.0005 * math.sin(bdeg)
+                        y_shift = 0.0005 * math.cos(bdeg)
                         print('x_shift', x_shift, 'y_shift', y_shift)
 
                     if 'EXIF LensSpecification' in tags.keys():
@@ -159,9 +161,9 @@ class ImgExif:
                         foc = gps_focal_length.values[0].num / gps_focal_length.values[0].den
                         print('FocalLength', gps_focal_length, foc)
 
-                    FOV = 2*math.atan((math.sqrt(a*a + b*b)/2)/foc)
+                        FOV = 2*math.atan((math.sqrt(a*a + b*b)/2)/foc)
 
-                    print('FOV', FOV)
+                        print('FOV', FOV)
 
                     # FOV = 2*arctan((SQRT(a*a + b*b)/2)/f)
                     # Where SQRT = square root
@@ -195,22 +197,23 @@ class ImgExif:
                         })
 
                         if value == '':
-                            ls = geojson.LineString([
-                                (lng, lat),
-                                (lng + y_shift, lat + x_shift)
-                            ])
-                            self.all_points.append(geojson.Feature(
-                                geometry=ls,
-                                properties={'bearing': bdeg}
-                            ))
-                            self.all_points.append(geojson.Feature(
+                            if bdeg:
+                                ls = geojson.LineString([
+                                    (lng, lat),
+                                    (lng + y_shift, lat + x_shift)
+                                ])
+                                self.bearing_features.append(geojson.Feature(
+                                    geometry=ls,
+                                    properties={'bearing': bdeg}
+                                ))
+                            self.bearing_features.append(geojson.Feature(
                                 geometry=geojson.Point((lng, lat)),
                                 properties={
                                     'img': f,
-                                    'marker-symbol': 'attraction',
+                                    'marker-symbol': 'circle',
+                                    'marker-color': '#ff0000'
                                 }
                             ))
-
             if lat and lng and time_str and value:
                 self.add_to_geojson(
                     lat, lng, {
@@ -242,6 +245,13 @@ class ImgExif:
 
         with open('jakarta_geo.json', 'w') as geo1:
             geo1.write(geojson.dumps(fc, indent=4))
+
+        print('\n\n\n')
+
+        fc2 = geojson.FeatureCollection(self.bearing_features)
+        print(geojson.dumps(fc2))
+        with open('jakarta_bearing_geo.json', 'w') as geo2:
+            geo2.write(geojson.dumps(fc2, indent=4))
 
     def print_dates(self):
         print(self.all_dates)
