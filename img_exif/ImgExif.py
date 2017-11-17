@@ -143,8 +143,8 @@ class ImgExif:
                         bdeg = gps_dest_bearing.values[0].num / gps_dest_bearing.values[0].den
                         print('GPSDestBearing', gps_dest_bearing, bdeg)
 
-                        x_shift = 0.1 * math.sin(bdeg)
-                        y_shift = 0.1 * math.cos(bdeg)
+                        x_shift = 0.001 * math.sin(bdeg)
+                        y_shift = 0.001 * math.cos(bdeg)
 
                         print('x_shift', x_shift, 'y_shift', y_shift)
 

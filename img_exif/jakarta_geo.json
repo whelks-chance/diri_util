@@ -1,928 +1,926 @@
 {
-    "type": "FeatureCollection",
     "features": [
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#d7eed1",
+                "datetime": "2017-10-26T05:38:00Z",
+                "value": "46",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3664.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.83194444444445,
                     -6.180555555555556
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#d7eed1",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3664.JPG",
-                "datetime": "2017-10-26T05:38:00Z",
-                "value": "46"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.83194444444445,
-                    -6.180277777777778
-                ]
-            },
             "properties": {
                 "marker-color": "#d7eed1",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3665.JPG",
                 "datetime": "2017-10-26T05:38:30Z",
-                "value": "46"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "46",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3665.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.83194444444445,
                     -6.180277777777778
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#d7eed1",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3666.JPG",
                 "datetime": "2017-10-26T05:38:31Z",
-                "value": "46"
-            }
+                "value": "46",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3666.JPG"
+            },
+            "geometry": {
+                "coordinates": [
+                    106.83194444444445,
+                    -6.180277777777778
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#e1f2d2",
+                "datetime": "2017-10-26T05:52:54Z",
+                "value": "57",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3673(1).JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.83222222222221,
                     -6.180277777777778
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#e1f2d2",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3673(1).JPG",
-                "datetime": "2017-10-26T05:52:54Z",
-                "value": "57"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#e1f2d2",
+                "datetime": "2017-10-26T05:52:54Z",
+                "value": "57",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3673.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.83222222222221,
                     -6.180277777777778
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#e1f2d2",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3673.JPG",
-                "datetime": "2017-10-26T05:52:54Z",
-                "value": "57"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#efbdbe",
+                "datetime": "2017-10-29T00:45:26Z",
+                "value": "185",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3709.jpg"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82222222222222,
                     -6.207777777777778
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#efbdbe",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3709.jpg",
-                "datetime": "2017-10-29T00:45:26Z",
-                "value": "185"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {},
             "geometry": {
-                "type": "LineString",
                 "coordinates": [
                     [
                         106.82194444444444,
                         -6.2075000000000005
                     ],
                     [
-                        106.91513321499278,
-                        -6.17122531125302
+                        106.82287633214992,
+                        -6.20713725311253
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {},
             "geometry": {
-                "type": "LineString",
                 "coordinates": [
                     [
                         106.82222222222222,
                         -6.207777777777778
                     ],
                     [
-                        106.75141867159986,
-                        -6.13716009430355
+                        106.821514186716,
+                        -6.207071600943036
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {},
             "geometry": {
-                "type": "LineString",
                 "coordinates": [
                     [
                         106.82222222222222,
                         -6.207777777777778
                     ],
                     [
-                        106.9197459853663,
-                        -6.185661819236082
+                        106.82319745985366,
+                        -6.207556618192362
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.82277777777777,
-                    -6.203055555555555
-                ]
-            },
             "properties": {
                 "marker-color": "#f5c5c0",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3730.jpg",
                 "datetime": "2017-10-29T01:12:04Z",
-                "value": "175"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "175",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3730.jpg"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82277777777777,
                     -6.203055555555555
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#f2bfbe",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3731.JPG",
                 "datetime": "2017-10-29T01:14:33Z",
-                "value": "182"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "182",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3731.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82277777777777,
                     -6.203055555555555
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#f2bfbe",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3732.JPG",
                 "datetime": "2017-10-29T01:14:36Z",
-                "value": "182"
-            }
+                "value": "182",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3732.JPG"
+            },
+            "geometry": {
+                "coordinates": [
+                    106.82277777777777,
+                    -6.203055555555555
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.82305555555556,
-                    -6.198333333333333
-                ]
-            },
             "properties": {
                 "marker-color": "#facfc5",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3743.JPG",
                 "datetime": "2017-10-29T01:44:33Z",
-                "value": "165"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "165",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3743.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82305555555556,
                     -6.198333333333333
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#facfc5",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3745.JPG",
                 "datetime": "2017-10-29T01:44:37Z",
-                "value": "165"
-            }
+                "value": "165",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3745.JPG"
+            },
+            "geometry": {
+                "coordinates": [
+                    106.82305555555556,
+                    -6.198333333333333
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.8236111111111,
-                    -6.194444444444445
-                ]
-            },
             "properties": {
                 "marker-color": "#f2bfbe",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3747.JPG",
                 "datetime": "2017-10-29T02:07:6Z",
-                "value": "182"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "182",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3747.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.8236111111111,
                     -6.194444444444445
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#f2bfbe",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3748.JPG",
-                "datetime": "2017-10-29T02:07:10Z",
-                "value": "182"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#f2bfbe",
+                "datetime": "2017-10-29T02:07:10Z",
+                "value": "182",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3748.JPG"
+            },
             "geometry": {
-                "type": "Point",
+                "coordinates": [
+                    106.8236111111111,
+                    -6.194444444444445
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "marker-color": "#f8ccc3",
+                "datetime": "2017-10-29T02:08:37Z",
+                "value": "168",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3749.JPG"
+            },
+            "geometry": {
                 "coordinates": [
                     106.8236111111111,
                     -6.1947222222222225
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#f8ccc3",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3749.JPG",
-                "datetime": "2017-10-29T02:08:37Z",
-                "value": "168"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.82222222222222,
-                    -6.207777777777778
-                ]
-            },
             "properties": {
                 "marker-color": "#fcd5c8",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3754.JPG",
                 "datetime": "2017-10-29T03:08:44Z",
-                "value": "158"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "158",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3754.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82222222222222,
                     -6.207777777777778
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#fcd5c8",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3755.JPG",
                 "datetime": "2017-10-29T03:08:50Z",
-                "value": "158"
-            }
+                "value": "158",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3755.JPG"
+            },
+            "geometry": {
+                "coordinates": [
+                    106.82222222222222,
+                    -6.207777777777778
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.82249999999999,
-                    -6.207777777777778
-                ]
-            },
             "properties": {
                 "marker-color": "#ffedd5",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3757.JPG",
                 "datetime": "2017-10-29T04:11:38Z",
-                "value": "132"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "132",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3757.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82249999999999,
                     -6.207777777777778
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#ffedd5",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3758.JPG",
                 "datetime": "2017-10-29T04:11:44Z",
-                "value": "132"
-            }
+                "value": "132",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3758.JPG"
+            },
+            "geometry": {
+                "coordinates": [
+                    106.82249999999999,
+                    -6.207777777777778
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.82222222222222,
-                    -6.207777777777778
-                ]
-            },
             "properties": {
                 "marker-color": "#ffedd5",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3759.JPG",
                 "datetime": "2017-10-29T04:13:4Z",
-                "value": "132"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "132",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3759.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82222222222222,
                     -6.207777777777778
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#ffedd5",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3760.JPG",
-                "datetime": "2017-10-29T04:13:16Z",
-                "value": "132"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#ffedd5",
+                "datetime": "2017-10-29T04:13:16Z",
+                "value": "132",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3760.JPG"
+            },
             "geometry": {
-                "type": "Point",
+                "coordinates": [
+                    106.82222222222222,
+                    -6.207777777777778
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "marker-color": "#ffefd7",
+                "datetime": "2017-10-29T04:17:38Z",
+                "value": "129",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3763.JPG"
+            },
+            "geometry": {
                 "coordinates": [
                     106.82222222222222,
                     -6.2075000000000005
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#ffefd7",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3763.JPG",
-                "datetime": "2017-10-29T04:17:38Z",
-                "value": "129"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#ffefd7",
+                "datetime": "2017-10-29T04:18:17Z",
+                "value": "129",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3764.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82249999999999,
                     -6.207777777777778
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#ffefd7",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3764.JPG",
-                "datetime": "2017-10-29T04:18:17Z",
-                "value": "129"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.82222222222222,
-                    -6.207777777777778
-                ]
-            },
             "properties": {
                 "marker-color": "#fcd6c8",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3765.JPG",
                 "datetime": "2017-10-29T04:23:10Z",
-                "value": "157"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "157",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3765.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82222222222222,
                     -6.207777777777778
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#f9cec4",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3769.jpg",
                 "datetime": "2017-10-29T04:44:52Z",
-                "value": "166"
-            }
+                "value": "166",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3769.jpg"
+            },
+            "geometry": {
+                "coordinates": [
+                    106.82222222222222,
+                    -6.207777777777778
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.82277777777777,
-                    -6.203055555555555
-                ]
-            },
             "properties": {
                 "marker-color": "#f9cdc4",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3771.jpg",
                 "datetime": "2017-10-29T05:02:12Z",
-                "value": "167"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "167",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3771.jpg"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82277777777777,
                     -6.203055555555555
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#f9cdc4",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3772.JPG",
                 "datetime": "2017-10-29T05:02:21Z",
-                "value": "167"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "167",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3772.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82277777777777,
                     -6.203055555555555
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#f9cdc4",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3773.jpg",
                 "datetime": "2017-10-29T05:02:51Z",
-                "value": "167"
-            }
+                "value": "167",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3773.jpg"
+            },
+            "geometry": {
+                "coordinates": [
+                    106.82277777777777,
+                    -6.203055555555555
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {},
             "geometry": {
-                "type": "LineString",
                 "coordinates": [
                     [
                         106.82333333333332,
                         -6.198888888888889
                     ],
                     [
-                        106.87676172954559,
-                        -6.283419395087446
+                        106.82386761729545,
+                        -6.199734193950874
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {},
             "geometry": {
-                "type": "LineString",
                 "coordinates": [
                     [
                         106.82333333333332,
                         -6.198888888888889
                     ],
                     [
-                        106.8666046539078,
-                        -6.108735725795515
+                        106.82376604653906,
+                        -6.197987357257955
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {},
             "geometry": {
-                "type": "LineString",
                 "coordinates": [
                     [
                         106.82305555555556,
                         -6.198888888888889
                     ],
                     [
-                        106.9078218699228,
-                        -6.251942370853721
+                        106.82390321869923,
+                        -6.199419423708537
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {},
             "geometry": {
-                "type": "LineString",
                 "coordinates": [
                     [
                         106.82305555555556,
                         -6.198333333333333
                     ],
                     [
-                        106.7587687597022,
-                        -6.1217356318083525
+                        106.82241268759702,
+                        -6.197567356318084
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.82305555555556,
-                    -6.198333333333333
-                ]
-            },
             "properties": {
                 "marker-color": "#f9cec4",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3778.jpg",
                 "datetime": "2017-10-29T05:15:20Z",
-                "value": "166"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "166",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3778.jpg"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82305555555556,
                     -6.198333333333333
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#f8ccc3",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3779.JPG",
-                "datetime": "2017-10-29T05:15:37Z",
-                "value": "168"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#f8ccc3",
+                "datetime": "2017-10-29T05:15:37Z",
+                "value": "168",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3779.JPG"
+            },
             "geometry": {
-                "type": "LineString",
+                "coordinates": [
+                    106.82305555555556,
+                    -6.198333333333333
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {},
+            "geometry": {
                 "coordinates": [
                     [
                         106.8236111111111,
                         -6.194444444444445
                     ],
                     [
-                        106.73186472936511,
-                        -6.234226367933883
+                        106.82269364729365,
+                        -6.194842263679339
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {},
             "geometry": {
-                "type": "LineString",
                 "coordinates": [
                     [
                         106.8236111111111,
                         -6.1947222222222225
                     ],
                     [
-                        106.8218042034095,
-                        -6.294705896312335
+                        106.82359304203409,
+                        -6.195722058963123
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.8236111111111,
-                    -6.194444444444445
-                ]
-            },
             "properties": {
                 "marker-color": "#f5c5c0",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3783.JPG",
                 "datetime": "2017-10-29T05:49:58Z",
-                "value": "176"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "176",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3783.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.8236111111111,
                     -6.194444444444445
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#f4c3bf",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3784.JPG",
-                "datetime": "2017-10-29T05:52:02Z",
-                "value": "178"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#f4c3bf",
+                "datetime": "2017-10-29T05:52:02Z",
+                "value": "178",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3784.JPG"
+            },
             "geometry": {
-                "type": "LineString",
+                "coordinates": [
+                    106.8236111111111,
+                    -6.194444444444445
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {},
+            "geometry": {
                 "coordinates": [
                     [
                         106.82222222222222,
                         -6.208055555555556
                     ],
                     [
-                        106.90969989535839,
-                        -6.159602932275884
+                        106.82309699895359,
+                        -6.207571029322759
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#f5fbde",
+                "datetime": "2017-10-30T08:45:43Z",
+                "value": "82",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3790.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82194444444444,
                     -6.207777777777778
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#f5fbde",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3790.JPG",
-                "datetime": "2017-10-30T08:45:43Z",
-                "value": "82"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#fcd4c7",
+                "datetime": "2017-10-30T09:05:16Z",
+                "value": "159",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3792.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82277777777777,
                     -6.203333333333333
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#fcd4c7",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3792.JPG",
-                "datetime": "2017-10-30T09:05:16Z",
-                "value": "159"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.82277777777777,
-                    -6.203055555555555
-                ]
-            },
             "properties": {
                 "marker-color": "#fddaca",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3807.jpg",
                 "datetime": "2017-10-30T09:09:40Z",
-                "value": "153"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "153",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3807.jpg"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82277777777777,
                     -6.203055555555555
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#fddaca",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3808.jpg",
                 "datetime": "2017-10-30T09:09:40Z",
-                "value": "153"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "153",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3808.jpg"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82277777777777,
                     -6.203055555555555
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#fddaca",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3809.jpg",
                 "datetime": "2017-10-30T09:09:41Z",
-                "value": "153"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "153",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3809.jpg"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82277777777777,
                     -6.203055555555555
-                ]
+                ],
+                "type": "Point"
             },
+            "type": "Feature"
+        },
+        {
             "properties": {
                 "marker-color": "#fddaca",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3810.JPG",
                 "datetime": "2017-10-30T09:09:49Z",
-                "value": "153"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "153",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3810.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82277777777777,
                     -6.203055555555555
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#fddaca",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3811.JPG",
-                "datetime": "2017-10-30T09:09:59Z",
-                "value": "153"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#fddaca",
+                "datetime": "2017-10-30T09:09:59Z",
+                "value": "153",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3811.JPG"
+            },
             "geometry": {
-                "type": "LineString",
+                "coordinates": [
+                    106.82277777777777,
+                    -6.203055555555555
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {},
+            "geometry": {
                 "coordinates": [
                     [
                         106.82333333333332,
                         -6.198611111111111
                     ],
                     [
-                        106.75907781480574,
-                        -6.275235052139686
+                        106.82269077814804,
+                        -6.199377350521397
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {},
             "geometry": {
-                "type": "LineString",
                 "coordinates": [
                     [
                         106.82305555555556,
                         -6.198888888888889
                     ],
                     [
-                        106.73485138538778,
-                        -6.1517717543727235
+                        106.82217351385388,
+                        -6.198417717543728
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.82305555555556,
-                    -6.198333333333333
-                ]
-            },
             "properties": {
                 "marker-color": "#fffeea",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3815.JPG",
                 "datetime": "2017-10-30T09:31:48Z",
-                "value": "102"
-            }
-        },
-        {
-            "type": "Feature",
+                "value": "102",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3815.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82305555555556,
                     -6.198333333333333
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#fffae4",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3817.JPG",
-                "datetime": "2017-10-30T09:33:29Z",
-                "value": "110"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#fffae4",
+                "datetime": "2017-10-30T09:33:29Z",
+                "value": "110",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3817.JPG"
+            },
             "geometry": {
-                "type": "LineString",
+                "coordinates": [
+                    106.82305555555556,
+                    -6.198333333333333
+                ],
+                "type": "Point"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {},
+            "geometry": {
                 "coordinates": [
                     [
                         106.82333333333332,
                         -6.194166666666667
                     ],
                     [
-                        106.87178907809624,
-                        -6.28164261078544
+                        106.82381789078096,
+                        -6.195041426107855
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {
+                "marker-color": "#fff6dd",
+                "datetime": "2017-10-30T10:00:15Z",
+                "value": "119",
+                "marker-symbol": "heart",
+                "img_name": "IMG_3819.JPG"
+            },
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     106.82333333333332,
                     -6.194444444444445
-                ]
+                ],
+                "type": "Point"
             },
-            "properties": {
-                "marker-color": "#fff6dd",
-                "marker-symbol": "heart",
-                "img_name": "IMG_3819.JPG",
-                "datetime": "2017-10-30T10:00:15Z",
-                "value": "119"
-            }
+            "type": "Feature"
         },
         {
-            "type": "Feature",
+            "properties": {},
             "geometry": {
-                "type": "LineString",
                 "coordinates": [
                     [
                         106.83194444444445,
@@ -1088,9 +1086,11 @@
                         106.82333333333332,
                         -6.194444444444445
                     ]
-                ]
+                ],
+                "type": "LineString"
             },
-            "properties": {}
+            "type": "Feature"
         }
-    ]
+    ],
+    "type": "FeatureCollection"
 }
