@@ -143,8 +143,8 @@ class ImgExif:
                         bdeg = gps_dest_bearing.values[0].num / gps_dest_bearing.values[0].den
                         print('GPSDestBearing', gps_dest_bearing, bdeg)
 
-                        x_shift = 10 * math.sin(bdeg)
-                        y_shift = 10 * math.cos(bdeg)
+                        x_shift = 1 * math.sin(bdeg)
+                        y_shift = 1 * math.cos(bdeg)
 
                         print('x_shift', x_shift, 'y_shift', y_shift)
 
@@ -257,6 +257,6 @@ if __name__ == '__main__':
     img_location = "C:\\Users\\Ian Harvey\\OneDrive - Cardiff University\\Email attachments"
     ie = ImgExif()
     ie.load_cache()
-    ie.read_exif(img_location)
+    ie.read_exif(img_location, show_img=False)
     ie.print_geojson()
 
