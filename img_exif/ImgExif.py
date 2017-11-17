@@ -200,7 +200,14 @@ class ImgExif:
                                 (lng, lat),
                                 (lng + y_shift, lat + x_shift)
                             ])
-                            self.all_points.append(geojson.Feature(geometry=ls))
+                            self.all_points.append(geojson.Feature(
+                                geometry=ls,
+                                properties={'bearing': bdeg}
+                            ))
+                            self.all_points.append(geojson.Feature(
+                                geometry=geojson.Point((lng, lat)),
+                                properties={'img': f}
+                            ))
 
             if lat and lng and time_str and value:
                 self.add_to_geojson(
