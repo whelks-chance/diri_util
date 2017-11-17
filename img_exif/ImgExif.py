@@ -10,6 +10,7 @@ from PIL import Image
 from colours import colours
 from exifread.utils import Ratio
 
+# http://www.thephotoforum.com/threads/calculate-angle-of-view-from-exif-tags.129742/
 
 class ImgExif:
 
@@ -139,18 +140,29 @@ class ImgExif:
 
                     if 'GPS GPSDestBearing' in tags.keys():
                         gps_dest_bearing = tags['GPS GPSDestBearing']
-                        print('GPSDestBearing', gps_dest_bearing)
+                        bdeg = gps_dest_bearing.values[0].num / gps_dest_bearing.values[0].den
+                        print('GPSDestBearing', gps_dest_bearing, bdeg)
+
+                        x_shift = 10 * math.sin(bdeg)
+                        y_shift = 10 * math.cos(bdeg)
+
+                        print('x_shift', x_shift, 'y_shift', y_shift)
 
                     if 'EXIF LensSpecification' in tags.keys():
                         gps_lens_specification = tags['EXIF LensSpecification']
                         print('LensSpecification', gps_lens_specification)
+                        a = gps_lens_specification.values[0].num / gps_lens_specification.values[0].den
+                        b = gps_lens_specification.values[2].num / gps_lens_specification.values[2].den
+                        print('a', a, 'b', b)
 
                     if 'EXIF FocalLength' in tags.keys():
                         gps_focal_length = tags['EXIF FocalLength']
                         f = gps_focal_length.values[0].num / gps_focal_length.values[0].den
                         print('FocalLength', gps_focal_length, f)
 
-                    # FOV = 2*math.atan((math.sqrt(a*a + b*b)/2)/f)
+                    FOV = 2*math.atan((math.sqrt(a*a + b*b)/2)/f)
+
+                    print('FOV', FOV)
 
                     # FOV = 2*arctan((SQRT(a*a + b*b)/2)/f)
                     # Where SQRT = square root
@@ -182,6 +194,13 @@ class ImgExif:
                             'lat': lat,
                             'lng': lng
                         })
+
+                        if value == '':
+                            ls = geojson.LineString([
+                                (lng, lat),
+                                (lng + y_shift, lat + x_shift)
+                            ])
+                            self.all_points.append(geojson.Feature(geometry=ls))
 
             if lat and lng and time_str and value:
                 self.add_to_geojson(
