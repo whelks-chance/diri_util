@@ -196,8 +196,9 @@ class ImgExif:
 
                         if value == '':
                             if bdeg:
+                                bearing_line_length = 0.0005
                                 x_shift, y_shift, radians = self.deg_to_bearing_line_coord(
-                                    bdeg, 0.0005
+                                    bdeg, bearing_line_length
                                 )
                                 ls = self.bearing_linestring_from_offset(lat, lng, x_shift, y_shift)
                                 self.add_feature(ls, {
@@ -206,6 +207,8 @@ class ImgExif:
                                     'img_name': f,
                                     'datetime': time_str
                                 })
+
+                                self.add_arrow(radians, lat + x_shift, lng + y_shift, 0.0005 * 0.1)
 
                             self.bearing_features.append(geojson.Feature(
                                 geometry=geojson.Point((lng, lat)),
@@ -301,6 +304,28 @@ class ImgExif:
                 'bearing': bdeg,
                 'radians': radians
             })
+            self.add_arrow(radians, lat+x_shift, lng+y_shift, line_length*0.1)
+
+    def add_arrow(self, radians, lat, lng, length, arrow_angle=0.1):
+        arrow_x_shift = length * math.sin(math.pi + radians + (math.pi * arrow_angle))
+        arrow_y_shift = length * math.cos(math.pi + radians + (math.pi * arrow_angle))
+        arrow1 = geojson.LineString((
+            (lng, lat),
+            (lng + arrow_y_shift, lat + arrow_x_shift)
+        ))
+        self.bearing_features.append(geojson.Feature(
+            geometry=arrow1, properties={}
+        ))
+        arrow_x_shift = length * math.sin(math.pi + radians + (math.pi * -arrow_angle))
+        arrow_y_shift = length * math.cos(math.pi + radians + (math.pi * -arrow_angle))
+        arrow2 = geojson.LineString((
+            (lng, lat),
+            (lng + arrow_y_shift, lat + arrow_x_shift)
+        ))
+        self.bearing_features.append(geojson.Feature(
+            geometry=arrow2, properties={}
+        ))
+
 
 if __name__ == '__main__':
     img_location = "C:\\Users\\Ian Harvey\\OneDrive - Cardiff University\\Email attachments"
