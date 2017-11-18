@@ -1,7 +1,13 @@
 {
-    "type": "FeatureCollection",
     "features": [
         {
+            "properties": {
+                "datetime": "2017-10-29T00:48:14Z",
+                "bearing": 19.22076978939724,
+                "radians": 1.2353311386347132,
+                "img_name": "IMG_3710.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -9,18 +15,20 @@
                         -6.2075000000000005
                     ],
                     [
-                        106.82241038829719,
-                        -6.207318626556265
+                        106.82210904867583,
+                        -6.207027871366036
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 19.22076978939724
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3710.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82194444444444,
@@ -28,14 +36,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3710.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-29T00:48:34Z",
+                "bearing": 209.70262390670553,
+                "radians": -2.0892058058309035,
+                "img_name": "IMG_3711.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -43,18 +53,20 @@
                         -6.207777777777778
                     ],
                     [
-                        106.82186820446911,
-                        -6.2074246893604075
+                        106.82197447260955,
+                        -6.208212081967746
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 209.70262390670553
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3711.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82222222222222,
@@ -62,14 +74,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3711.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-29T00:51:36Z",
+                "bearing": 100.75396825396825,
+                "radians": -0.18769223412698413,
+                "img_name": "IMG_3715.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -77,18 +91,20 @@
                         -6.207777777777778
                     ],
                     [
-                        106.82270984103795,
-                        -6.20766719798507
+                        106.82271344095317,
+                        -6.207871073856887
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 100.75396825396825
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3715.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82222222222222,
@@ -96,14 +112,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3715.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-29T05:11:32Z",
+                "bearing": 11.559234731420162,
+                "radians": 1.3690502084621046,
+                "img_name": "IMG_3774.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -111,18 +129,20 @@
                         -6.198888888888889
                     ],
                     [
-                        106.82360047531438,
-                        -6.199311541419882
+                        106.82343352350297,
+                        -6.198399029796999
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 11.559234731420162
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3774.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82333333333332,
@@ -130,14 +150,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3774.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-29T05:11:34Z",
+                "bearing": 13.689666778862335,
+                "radians": 1.3318671388084822,
+                "img_name": "IMG_3775.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -145,18 +167,20 @@
                         -6.198888888888889
                     ],
                     [
-                        106.8235496899362,
-                        -6.198438123073422
+                        106.82345166451832,
+                        -6.198403092912517
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 13.689666778862335
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3775.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82333333333332,
@@ -164,14 +188,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3775.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-29T05:12:00Z",
+                "bearing": 213.06906906906906,
+                "radians": -2.147961383183183,
+                "img_name": "IMG_3776.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -179,18 +205,20 @@
                         -6.198888888888889
                     ],
                     [
-                        106.82347938712739,
-                        -6.199154156298713
+                        106.82278273034889,
+                        -6.1993078953406435
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 213.06906906906906
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3776.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82305555555556,
@@ -198,14 +226,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3776.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-29T05:15:04Z",
+                "bearing": 316.4282982791587,
+                "radians": -3.9519210183556406,
+                "img_name": "IMG_3777.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -213,18 +243,20 @@
                         -6.198333333333333
                     ],
                     [
-                        106.82273412157629,
-                        -6.197950344825708
+                        106.82271092527286,
+                        -6.197971076562178
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 316.4282982791587
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3777.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82305555555556,
@@ -232,14 +264,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3777.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-29T05:47:34Z",
+                "bearing": 273.7276995305164,
+                "radians": -3.2066546582159625,
+                "img_name": "IMG_3781.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -247,18 +281,20 @@
                         -6.194444444444445
                     ],
                     [
-                        106.82315237920237,
-                        -6.194643354061892
+                        106.82311216900396,
+                        -6.194411936388246
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 273.7276995305164
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3781.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.8236111111111,
@@ -266,14 +302,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3781.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-29T05:48:24Z",
+                "bearing": 274.8712871287129,
+                "radians": -3.2266140356435646,
+                "img_name": "IMG_3782.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -281,18 +319,20 @@
                         -6.1947222222222225
                     ],
                     [
-                        106.8236020765726,
-                        -6.195222140592673
+                        106.82311291718162,
+                        -6.194679762728402
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 274.8712871287129
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3782.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.8236111111111,
@@ -300,14 +340,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3782.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-30T08:33:59Z",
+                "bearing": 19.355377421509687,
+                "radians": 1.2329817912491652,
+                "img_name": "IMG_3785.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -315,18 +357,20 @@
                         -6.208055555555556
                     ],
                     [
-                        106.8226596105879,
-                        -6.207813292439158
+                        106.82238793519251,
+                        -6.207583814936698
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 19.355377421509687
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3785.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82222222222222,
@@ -334,14 +378,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3785.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-30T09:19:26Z",
+                "bearing": 16.580931263858094,
+                "radians": 1.2814050323725057,
+                "img_name": "IMG_3812.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -349,18 +395,20 @@
                         -6.198611111111111
                     ],
                     [
-                        106.82301205574069,
-                        -6.198994230816254
+                        106.8234760177752,
+                        -6.198131902231766
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 16.580931263858094
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3812.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82333333333332,
@@ -368,14 +416,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3812.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-30T09:20:42Z",
+                "bearing": 197.429718875502,
+                "radians": -1.8750031124497992,
+                "img_name": "IMG_3814.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -383,18 +433,20 @@
                         -6.198888888888889
                     ],
                     [
-                        106.82261453470471,
-                        -6.198653303216308
+                        106.8229057873177,
+                        -6.19936593131355
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 197.429718875502
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3814.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82305555555556,
@@ -402,14 +454,16 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3814.JPG"
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "datetime": "2017-10-30T09:45:12Z",
+                "bearing": 137.1651376146789,
+                "radians": -0.8231872963302755,
+                "img_name": "IMG_3818.JPG",
+                "value": ""
+            },
             "geometry": {
                 "coordinates": [
                     [
@@ -417,18 +471,20 @@
                         -6.194166666666667
                     ],
                     [
-                        106.82357561205714,
-                        -6.19460404638726
+                        106.82367327701708,
+                        -6.1945333249433645
                     ]
                 ],
                 "type": "LineString"
             },
-            "type": "Feature",
-            "properties": {
-                "bearing": 137.1651376146789
-            }
+            "type": "Feature"
         },
         {
+            "properties": {
+                "marker-symbol": "circle",
+                "img": "IMG_3818.JPG",
+                "marker-color": "#ff0000"
+            },
             "geometry": {
                 "coordinates": [
                     106.82333333333332,
@@ -436,12 +492,728 @@
                 ],
                 "type": "Point"
             },
-            "type": "Feature",
+            "type": "Feature"
+        },
+        {
             "properties": {
-                "marker-symbol": "circle",
-                "marker-color": "#ff0000",
-                "img": "IMG_3818.JPG"
-            }
+                "bearing": 0,
+                "radians": 1.5707970000000002
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -3.3660255180079147e-06,
+                        4.999999999998867
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 10,
+                "radians": 1.3962640000000002
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        0.8682379417673614,
+                        4.924039284619445
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 20,
+                "radians": 1.2217310000000001
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        1.7100982564941778,
+                        4.698463999344421
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 30,
+                "radians": 1.047198
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        2.4999980566240096,
+                        4.330128140930263
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 40,
+                "radians": 0.872665
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        3.213936615918503,
+                        3.8302234176165646
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 50,
+                "radians": 0.6981320000000001
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        3.8302212539771645,
+                        3.213939194443727
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 60,
+                "radians": 0.523599
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        4.330126457917832,
+                        2.500000971687806
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 70,
+                "radians": 0.34906600000000004
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        4.698462848096482,
+                        1.7101014195237334
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 80,
+                "radians": 0.17453300000000002
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        4.924038700116116,
+                        0.8682412566555411
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 90,
+                "radians": -0.0
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        5.0,
+                        0.0
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 100,
+                "radians": -0.17453300000000002
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        4.924038700116116,
+                        -0.8682412566555411
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 110,
+                "radians": -0.34906600000000004
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        4.698462848096482,
+                        -1.7101014195237334
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 120,
+                "radians": -0.523599
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        4.330126457917832,
+                        -2.500000971687806
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 130,
+                "radians": -0.6981320000000001
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        3.8302212539771645,
+                        -3.213939194443727
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 140,
+                "radians": -0.872665
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        3.213936615918503,
+                        -3.8302234176165646
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 150,
+                "radians": -1.047198
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        2.4999980566240096,
+                        -4.330128140930263
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 160,
+                "radians": -1.2217310000000001
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        1.7100982564941778,
+                        -4.698463999344421
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 170,
+                "radians": -1.3962640000000002
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        0.8682379417673614,
+                        -4.924039284619445
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 180,
+                "radians": -1.5707970000000002
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -3.3660255180079147e-06,
+                        -4.999999999998867
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 190,
+                "radians": -1.74533
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -0.8682445715433268,
+                        -4.924038115610555
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 200,
+                "radians": -1.919863
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -1.7101045825525139,
+                        -4.698461696846415
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 210,
+                "radians": -2.094396
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -2.50000388675047,
+                        -4.330124774903437
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 220,
+                "radians": -2.268929
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -3.213941772967494,
+                        -3.8302190903360294
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 230,
+                "radians": -2.4434620000000002
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -3.830225581254229,
+                        -3.213934037391823
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 240,
+                "radians": -2.617995
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -4.330129823940732,
+                        -2.49999514155908
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 250,
+                "radians": -2.7925280000000003
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -4.698465150590231,
+                        -1.710095093463847
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 260,
+                "radians": -2.967061
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -4.924039869120543,
+                        -0.8682346268787889
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 270,
+                "radians": -3.1415940000000004
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -4.9999999999954685,
+                        6.732051036014304e-06
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 280,
+                "radians": -3.3161270000000003
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -4.924037531102762,
+                        0.8682478864307197
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 290,
+                "radians": -3.49066
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -4.698460545594218,
+                        1.7101077455805185
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 300,
+                "radians": -3.6651930000000004
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -4.3301230918870806,
+                        2.5000068018120016
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 310,
+                "radians": -3.839726
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -3.8302169266931574,
+                        3.2139443514898054
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 320,
+                "radians": -4.014259
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -3.213931458863687,
+                        3.8302277448901565
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 330,
+                "radians": -4.188792
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -2.499992226493017,
+                        4.330131506949239
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 340,
+                "radians": -4.363325000000001
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -1.7100919304327409,
+                        4.698466301833911
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "bearing": 350,
+                "radians": -4.537858
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        -0.8682313119898242,
+                        4.9240404536194085
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "type": "Feature"
         }
-    ]
+    ],
+    "type": "FeatureCollection"
 }

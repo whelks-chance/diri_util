@@ -145,9 +145,7 @@ class ImgExif:
                         bdeg = gps_dest_bearing.values[0].num / gps_dest_bearing.values[0].den
                         print('GPSDestBearing', gps_dest_bearing, bdeg)
 
-                        x_shift = 0.0005 * math.sin(bdeg)
-                        y_shift = 0.0005 * math.cos(bdeg)
-                        print('x_shift', x_shift, 'y_shift', y_shift)
+
 
                     if 'EXIF LensSpecification' in tags.keys():
                         gps_lens_specification = tags['EXIF LensSpecification']
@@ -198,14 +196,17 @@ class ImgExif:
 
                         if value == '':
                             if bdeg:
-                                ls = geojson.LineString([
-                                    (lng, lat),
-                                    (lng + y_shift, lat + x_shift)
-                                ])
-                                self.bearing_features.append(geojson.Feature(
-                                    geometry=ls,
-                                    properties={'bearing': bdeg}
-                                ))
+                                x_shift, y_shift, radians = self.deg_to_bearing_line_coord(
+                                    bdeg, 0.0005
+                                )
+                                ls = self.bearing_linestring_from_offset(lat, lng, x_shift, y_shift)
+                                self.add_feature(ls, {
+                                    'bearing': bdeg,
+                                    'radians': radians,
+                                    'img_name': f,
+                                    'datetime': time_str
+                                })
+
                             self.bearing_features.append(geojson.Feature(
                                 geometry=geojson.Point((lng, lat)),
                                 properties={
@@ -271,11 +272,41 @@ class ImgExif:
                     pass
         print(self.all_cache)
 
+    def deg_to_bearing_line_coord(self, bdeg, line_length):
+        radians = (bdeg - 90) * -0.0174533
+        x_shift = line_length * math.sin(radians)
+        y_shift = line_length * math.cos(radians)
+        return x_shift, y_shift, radians
+
+    def bearing_linestring_from_offset(self, lat, lng, x_shift, y_shift):
+        return geojson.LineString((
+            (lng, lat),
+            (lng + y_shift, lat + x_shift)
+        ))
+
+    def add_feature(self, feature, properties):
+        self.bearing_features.append(geojson.Feature(
+            geometry=feature,
+            properties=properties
+        ))
+
+    def add_bearing_star(self):
+        lng = 0
+        lat = 0
+        line_length = 5
+        for bdeg in range(0, 360, 10):
+            x_shift, y_shift, radians = self.deg_to_bearing_line_coord(bdeg, line_length)
+            ls = self.bearing_linestring_from_offset(lat, lng, x_shift, y_shift)
+            self.add_feature(ls, {
+                'bearing': bdeg,
+                'radians': radians
+            })
 
 if __name__ == '__main__':
     img_location = "C:\\Users\\Ian Harvey\\OneDrive - Cardiff University\\Email attachments"
     ie = ImgExif()
     ie.load_cache()
     ie.read_exif(img_location, show_img=False)
+    ie.add_bearing_star()
     ie.print_geojson()
 
