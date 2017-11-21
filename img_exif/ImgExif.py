@@ -339,5 +339,5 @@ if __name__ == '__main__':
     ie.load_cache()
     ie.read_exif(img_location, show_img=False)
     ie.add_bearing_star()
-    ie.print_geojson(indents=False)
+    ie.print_geojson(indents=True)
 
