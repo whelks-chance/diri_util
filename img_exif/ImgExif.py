@@ -241,21 +241,27 @@ class ImgExif:
         )
         self.lnglats.append((lng, lat))
 
-    def print_geojson(self):
+    def print_geojson(self, indents=True):
         ls = geojson.LineString(self.lnglats)
         self.all_points.append(geojson.Feature(geometry=ls))
         fc = geojson.FeatureCollection(self.all_points)
         print(geojson.dumps(fc))
 
         with open('jakarta_geo.json', 'w') as geo1:
-            geo1.write(geojson.dumps(fc, indent=4))
+            if indents:
+                geo1.write(geojson.dumps(fc, indent=4))
+            else:
+                geo1.write(geojson.dumps(fc))
 
         print('\n\n\n')
 
         fc2 = geojson.FeatureCollection(self.bearing_features)
         print(geojson.dumps(fc2))
         with open('jakarta_bearing_geo.json', 'w') as geo2:
-            geo2.write(geojson.dumps(fc2, indent=4))
+            if indents:
+                geo2.write(geojson.dumps(fc2, indent=4))
+            else:
+                geo2.write(geojson.dumps(fc2))
 
     def print_dates(self):
         print(self.all_dates)
@@ -333,5 +339,5 @@ if __name__ == '__main__':
     ie.load_cache()
     ie.read_exif(img_location, show_img=False)
     ie.add_bearing_star()
-    ie.print_geojson()
+    ie.print_geojson(indents=False)
 
