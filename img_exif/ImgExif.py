@@ -187,7 +187,7 @@ class ImgExif:
                             print(value)
 
                         self.cache({
-                            'img_name': f,
+                            'img_name': 'http://dataportal1-wiserd.cf.ac.uk/static/dataportal/media/aqp/' + f,
                             'value': value,
                             'datetime': time_str,
                             'lat': lat,
@@ -204,7 +204,7 @@ class ImgExif:
                                 self.add_feature(ls, {
                                     'bearing': bdeg,
                                     'radians': radians,
-                                    'img_name': f,
+                                    'img_name': 'http://dataportal1-wiserd.cf.ac.uk/static/dataportal/media/aqp/' + f,
                                     'datetime': time_str
                                 })
 
@@ -213,7 +213,7 @@ class ImgExif:
                             self.bearing_features.append(geojson.Feature(
                                 geometry=geojson.Point((lng, lat)),
                                 properties={
-                                    'img': f,
+                                    'img_name': 'http://dataportal1-wiserd.cf.ac.uk/static/dataportal/media/aqp/' + f,
                                     'marker-symbol': 'circle',
                                     'marker-color': '#ff0000'
                                 }
@@ -222,7 +222,7 @@ class ImgExif:
                 self.add_to_geojson(
                     lat, lng, {
                         'datetime': time_str,
-                        'img_name': f,
+                        'img_name': 'http://dataportal1-wiserd.cf.ac.uk/static/dataportal/media/aqp/' + f,
                         'value': value,
                         'REMOTE_VALUE': value,
                         'marker-symbol': 'heart',
