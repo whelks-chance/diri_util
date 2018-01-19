@@ -224,6 +224,7 @@ class ImgExif:
                         'datetime': time_str,
                         'img_name': f,
                         'value': value,
+                        'REMOTE_VALUE': value,
                         'marker-symbol': 'heart',
                         'marker-color': self.c_scale.get_colour(value)
                     })
@@ -338,6 +339,6 @@ if __name__ == '__main__':
     ie = ImgExif()
     ie.load_cache()
     ie.read_exif(img_location, show_img=False)
-    ie.add_bearing_star()
+    # ie.add_bearing_star()
     ie.print_geojson(indents=True)
 
